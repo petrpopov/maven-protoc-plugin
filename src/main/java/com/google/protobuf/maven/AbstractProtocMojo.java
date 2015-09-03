@@ -152,7 +152,7 @@ abstract class AbstractProtocMojo extends AbstractMojo {
                     outputDirectory.mkdirs();
 
                     // Quick fix to fix issues with two mvn installs in a row (ie no clean)
-                    cleanDirectory(outputDirectory);
+//                    cleanDirectory(outputDirectory);
 
                     Protoc protoc = new Protoc.Builder(protocExecutable, outputDirectory)
                             .addProtoPathElement(protoSourceRoot)
